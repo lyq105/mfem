@@ -30,10 +30,11 @@ void mfem_warning(const char *msg = NULL);
 // This is nice because it shows the class and method name
 #define _MFEM_FUNC_NAME __PRETTY_FUNCTION__
 // This one is C99 standard.
-//#define _MFEM_FUNC_NAME __func__
+#define _MFEM_FUNC_NAME __func__
 #else
 // for Visual Studio C++
-#define _MFEM_FUNC_NAME __FUNCSIG__
+//#define _MFEM_FUNC_NAME __FUNCSIG__
+#define _MFEM_FUNC_NAME __func__
 #endif
 #endif
 

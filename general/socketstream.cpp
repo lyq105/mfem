@@ -22,7 +22,7 @@
 #define closesocket (::close)
 #else
 #include <winsock.h>
-typedef int ssize_t;
+//typedef int ssize_t;
 // Link with ws2_32.lib
 #pragma comment(lib, "ws2_32.lib")
 #endif

@@ -22,7 +22,7 @@
 #include <unistd.h>
 #else
 #include <winsock.h>
-typedef int ssize_t;
+//typedef int ssize_t;
 typedef int socklen_t;
 #define close closesocket
 // Link with ws2_32.lib
